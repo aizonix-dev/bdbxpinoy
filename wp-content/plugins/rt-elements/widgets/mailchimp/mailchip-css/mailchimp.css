@@ -1,0 +1,56 @@
+/*var(--bodyFont): 'Space Grotesk', sans-serif;
+var(--titleFont): 'Space Grotesk', sans-serif;
+var(--transition): 1.3s;
+var(--primaryColor): #3f3eed;
+var(--secondaryColor): #083a5e;
+var(--whiteColor): #ffffff;
+var(--titleColor): #083a5e;
+$menuColor: #ffffff;
+var(--btnColor): #151f39;
+$linkColor: #6e777d;
+var(--hoverColor): #151f39;
+$globalColor: #6e777d;
+var(--bodyColor): #6e777d;
+$formBg: #ffffff;
+$gray77: #777777;
+$gray99: #999999;
+$shadow4: 0px 16px 32px 0px rgba(0, 0, 0, .04);
+$shadow6: 0px 16px 32px 0px rgba(0, 0, 0, .06);*/
+:root {
+  --bodyFont: 'Space Grotesk', sans-serif;
+  --titleFont: 'Space Grotesk', sans-serif;
+  --transition: 1.3s;
+  --primaryColor: #3f3eed;
+  --secondaryColor: #083a5e;
+  --whiteColor: #ffffff;
+  --titleColor: #083a5e;
+  --hoverColor: #3f3eed;
+  --bodyColor: #6e777d;
+  --btnColor: #151f39; }
+
+.rts-mailchimp .mc4wp-form-fields {
+  display: flex;
+  align-items: baseline; }
+  .rts-mailchimp .mc4wp-form-fields p {
+    margin: 0; }
+.rts-mailchimp .mailchimp--submit {
+  position: relative; }
+  .rts-mailchimp .mailchimp--submit:after {
+    position: absolute;
+    content: '\e80f';
+    left: 107px;
+    top: 6px;
+    color: #fff;
+    font-family: 'rt-icons'; }
+
+.rts-mailchimp.yes {
+  position: relative; }
+  .rts-mailchimp.yes input[type="submit"] {
+    font-size: 0; }
+  .rts-mailchimp.yes .fa-location-arrow {
+    position: absolute;
+    right: 17px;
+    bottom: 16px;
+    color: #fff; }
+
+/*# sourceMappingURL=mailchimp.css.map */

@@ -1,0 +1,74 @@
+/*var(--bodyFont): 'Space Grotesk', sans-serif;
+var(--titleFont): 'Space Grotesk', sans-serif;
+var(--transition): 1.3s;
+var(--primaryColor): #3f3eed;
+var(--secondaryColor): #083a5e;
+var(--whiteColor): #ffffff;
+var(--titleColor): #083a5e;
+$menuColor: #ffffff;
+var(--btnColor): #151f39;
+$linkColor: #6e777d;
+var(--hoverColor): #151f39;
+$globalColor: #6e777d;
+var(--bodyColor): #6e777d;
+$formBg: #ffffff;
+$gray77: #777777;
+$gray99: #999999;
+$shadow4: 0px 16px 32px 0px rgba(0, 0, 0, .04);
+$shadow6: 0px 16px 32px 0px rgba(0, 0, 0, .06);*/
+:root {
+  --bodyFont: 'Space Grotesk', sans-serif;
+  --titleFont: 'Space Grotesk', sans-serif;
+  --transition: 1.3s;
+  --primaryColor: #3f3eed;
+  --secondaryColor: #083a5e;
+  --whiteColor: #ffffff;
+  --titleColor: #083a5e;
+  --hoverColor: #3f3eed;
+  --bodyColor: #6e777d;
+  --btnColor: #151f39; }
+
+.rs-skill-bar .skillbar {
+  background: #eeeeee;
+  display: inline-block;
+  height: 6px;
+  position: relative;
+  width: 100%; }
+  .rs-skill-bar .skillbar .skillbar-bar {
+    background: var(--hoverColor);
+    height: 8px;
+    width: 0;
+    margin-bottom: 0; }
+  .rs-skill-bar .skillbar .skillbar-title,
+  .rs-skill-bar .skillbar .skill-bar-percent {
+    position: absolute; }
+  .rs-skill-bar .skillbar .skillbar-title {
+    color: #212121;
+    font-size: 20px;
+    font-weight: 600; }
+  .rs-skill-bar .skillbar .skill-bar-percent {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--titleColor); }
+.rs-skill-bar.animation .skillbar .skillbar-bar, .rs-skill-bar.striped .skillbar .skillbar-bar {
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-size: 1rem 1rem; }
+.rs-skill-bar.animation .skillbar .skillbar-bar {
+  -webkit-animation: rs-progress-pie-stripes 1s linear infinite;
+  animation: rs-progress-pie-stripes 1s linear infinite; }
+.rs-skill-bar.style1 .skillbar .skillbar-title {
+  top: -20px; }
+.rs-skill-bar.style1 .skillbar .skill-bar-percent {
+  right: 0;
+  top: -20px; }
+.rs-skill-bar.style2 .skillbar .skillbar-title {
+  left: 0;
+  padding: 2px 20px 0;
+  top: 0;
+  width: 160px;
+  background: #83b614; }
+.rs-skill-bar.style2 .skillbar .skill-bar-percent {
+  right: 10px;
+  top: 0; }
+
+/*# sourceMappingURL=progress.css.map */

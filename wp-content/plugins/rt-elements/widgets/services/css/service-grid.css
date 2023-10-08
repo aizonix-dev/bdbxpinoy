@@ -1,0 +1,358 @@
+/*var(--bodyFont): 'Space Grotesk', sans-serif;
+var(--titleFont): 'Space Grotesk', sans-serif;
+var(--transition): 1.3s;
+var(--primaryColor): #3f3eed;
+var(--secondaryColor): #083a5e;
+var(--whiteColor): #ffffff;
+var(--titleColor): #083a5e;
+$menuColor: #ffffff;
+var(--btnColor): #151f39;
+$linkColor: #6e777d;
+var(--hoverColor): #151f39;
+$globalColor: #6e777d;
+var(--bodyColor): #6e777d;
+$formBg: #ffffff;
+$gray77: #777777;
+$gray99: #999999;
+$shadow4: 0px 16px 32px 0px rgba(0, 0, 0, .04);
+$shadow6: 0px 16px 32px 0px rgba(0, 0, 0, .06);*/
+:root {
+  --bodyFont: 'Space Grotesk', sans-serif;
+  --titleFont: 'Space Grotesk', sans-serif;
+  --transition: 1.3s;
+  --primaryColor: #3f3eed;
+  --secondaryColor: #083a5e;
+  --whiteColor: #ffffff;
+  --titleColor: #083a5e;
+  --hoverColor: #3f3eed;
+  --bodyColor: #6e777d;
+  --btnColor: #151f39; }
+
+.react-addon-services.services-style1 {
+  position: relative;
+  cursor: default; }
+  .react-addon-services.services-style1 .services-icon svg {
+    width: 1em;
+    height: 1em; }
+  .react-addon-services.services-style1 .services-btn-part a i {
+    margin-left: 6px; }
+  .react-addon-services.services-style1:hover i {
+    font-weight: bold; }
+  .react-addon-services.services-style1 .services-title h3 {
+    margin-bottom: 4px !important; }
+.react-addon-services .services-part {
+  position: relative;
+  transition: 0.3s; }
+  .react-addon-services .services-part .services-icon {
+    font-size: 50px;
+    line-height: 50px;
+    color: var(--primaryColor);
+    transition: .3s; }
+    .react-addon-services .services-part .services-icon i {
+      transition: .3s; }
+      .react-addon-services .services-part .services-icon i:before {
+        margin: 0; }
+    .react-addon-services .services-part .services-icon:hover {
+      color: var(--secondaryColor); }
+    .react-addon-services .services-part .services-icon:after {
+      content: "";
+      position: absolute;
+      z-index: 0;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      display: block;
+      width: 90px;
+      height: 90px;
+      background: var(--primaryColor);
+      border-radius: 50%;
+      animation: pulse-border 1500ms ease-out infinite;
+      opacity: 0;
+      transition: .3s;
+      visibility: hidden; }
+  .react-addon-services .services-part .services-text {
+    padding: 10px 0 0;
+    position: relative;
+    font-family: var(--bodyFont);
+    max-width: 350px;
+    margin: auto; }
+    .react-addon-services .services-part .services-text .services-title {
+      position: relative; }
+      .react-addon-services .services-part .services-text .services-title span.service_number {
+        position: absolute;
+        content: "";
+        right: 0;
+        top: 0%;
+        transform: translateY(-50%);
+        font-size: 100px;
+        font-weight: 700;
+        font-family: var(--titleFont);
+        color: rgba(0, 0, 0, 0.05); }
+      .react-addon-services .services-part .services-text .services-title .title {
+        font-size: 24px;
+        margin: 0 0 10px;
+        color: var(--titleColor); }
+        .react-addon-services .services-part .services-text .services-title .title a {
+          color: var(--titleColor); }
+          .react-addon-services .services-part .services-text .services-title .title a:hover {
+            color: var(--hoverColor); }
+    .react-addon-services .services-part .services-text .services-txt {
+      color: var(--bodyColor);
+      margin: 0;
+      transition: .3s; }
+    .react-addon-services .services-part .services-text .services-btn-part {
+      margin: 10px 0 0; }
+      .react-addon-services .services-part .services-text .services-btn-part .services-btn {
+        position: relative;
+        display: inline-block;
+        color: var(--secondaryColor);
+        transition: .3s; }
+        .react-addon-services .services-part .services-text .services-btn-part .services-btn:hover {
+          color: var(--primaryColor); }
+        .react-addon-services .services-part .services-text .services-btn-part .services-btn.icon-after span {
+          float: left; }
+        .react-addon-services .services-part .services-text .services-btn-part .services-btn.icon-before span {
+          float: right; }
+        .react-addon-services .services-part .services-text .services-btn-part .services-btn.icon-before i {
+          margin-right: 10px; }
+  .react-addon-services .services-part img {
+    transition: 0.4s;
+    margin-top: 30px; }
+  .react-addon-services .services-part.box_shape::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    border-right: 30px solid #F6F6F6;
+    border-bottom: 30px solid #F6F6F6;
+    border-top: 30px solid transparent;
+    border-left: 30px solid transparent;
+    border-radius: 5px;
+    transition: 0.3s; }
+  .react-addon-services .services-part:hover::before {
+    border-right: 30px solid var(--primaryColor);
+    border-bottom: 30px solid var(--primaryColor); }
+.react-addon-services.services-style2 .services-part {
+  position: relative;
+  text-align: left;
+  display: flex; }
+  .react-addon-services.services-style2 .services-part .services-icon {
+    margin-right: 30px; }
+  .react-addon-services.services-style2 .services-part .services-text {
+    padding: 0;
+    width: max-content;
+    margin: 0 !important;
+    z-index: 2; }
+    .react-addon-services.services-style2 .services-part .services-text .services-title .title {
+      line-height: 34px; }
+  .react-addon-services.services-style2 .services-part .batch-number {
+    position: absolute;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 60px;
+    left: 66%;
+    top: 5%;
+    background: linear-gradient(180deg, #E6E6E6 41.14%, white 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    z-index: 1; }
+.react-addon-services.services-style2::after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  background: #00000052;
+  filter: blur(120px);
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0.35; }
+.react-addon-services.services-style3 .services-part {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  background: var(--whiteColor);
+  padding: 0;
+  border-radius: 30px; }
+  .react-addon-services.services-style3 .services-part .service-thumb {
+    max-width: 50%; }
+    .react-addon-services.services-style3 .services-part .service-thumb img {
+      margin-top: 0; }
+  .react-addon-services.services-style3 .services-part .service-content .services-icon {
+    width: 90px;
+    height: 90px;
+    line-height: 70px !important;
+    text-align: center;
+    background: #eff3ff;
+    border-radius: 100px; }
+  .react-addon-services.services-style3 .services-part .service-content .services-text {
+    padding-right: 60px; }
+    .react-addon-services.services-style3 .services-part .service-content .services-text .services-btn-part a {
+      display: inline-block;
+      cursor: pointer;
+      color: #fff;
+      padding: 19px 40px;
+      font-size: 16px;
+      font-weight: 600;
+      font-family: var(--bodyFont) !important;
+      line-height: 19px;
+      text-align: center;
+      text-transform: capitalize;
+      background: var(--titleColor);
+      border-radius: 100px;
+      vertical-align: middle;
+      position: relative;
+      transform: perspective(1px) translateZ(0);
+      transition-property: color;
+      transition-duration: 0.3s;
+      transition: 0.3s;
+      z-index: 1;
+      overflow: hidden; }
+      .react-addon-services.services-style3 .services-part .service-content .services-text .services-btn-part a i {
+        margin-left: 3px; }
+      .react-addon-services.services-style3 .services-part .service-content .services-text .services-btn-part a::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: var(--primaryColor);
+        border-radius: 100px;
+        transform-origin: 50%;
+        transition-property: transform;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-out;
+        transition: .5s;
+        z-index: -1; }
+      .react-addon-services.services-style3 .services-part .service-content .services-text .services-btn-part a:hover::before {
+        transform: scaleX(0);
+        background: var(--primaryColor); }
+      .react-addon-services.services-style3 .services-part .service-content .services-text .services-btn-part a:hover {
+        background: var(--titleColor);
+        color: var(--whiteColor); }
+.react-addon-services.services-style4 .services-part {
+  padding: 0; }
+  .react-addon-services.services-style4 .services-part .thumbnail {
+    position: relative;
+    background: transparent;
+    border: 2px dashed rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 100%;
+    height: 220px;
+    width: 220px;
+    margin: auto;
+    line-height: 175px;
+    transition: .3s; }
+    .react-addon-services.services-style4 .services-part .thumbnail img {
+      margin: 0 !important; }
+    .react-addon-services.services-style4 .services-part .thumbnail .batch-number {
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      height: 80px;
+      width: 80px;
+      border-radius: 50%;
+      background: var(--primaryColor);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      border: 10px solid #ffff; }
+    .react-addon-services.services-style4 .services-part .thumbnail .services-icon {
+      transition: 0.3s;
+      margin: auto;
+      line-height: 170px;
+      background: #fff;
+      width: 180px;
+      height: 180px;
+      border-radius: 100px; }
+  .react-addon-services.services-style4 .services-part .services-text {
+    padding: 20px 0 0; }
+  .react-addon-services.services-style4 .services-part:hover .thumbnail {
+    border: 2px dashed var(--primaryColor); }
+.react-addon-services.services-style5 .services-part {
+  background: var(--whiteColor);
+  padding: 0 0 50px 0;
+  text-align: center; }
+  .react-addon-services.services-style5 .services-part .service-thumb {
+    overflow: hidden; }
+    .react-addon-services.services-style5 .services-part .service-thumb img {
+      margin: 0;
+      transition: 0.3s; }
+  .react-addon-services.services-style5 .services-part .services-icon {
+    width: 130px;
+    height: 130px;
+    line-height: 90px;
+    background: var(--primaryColor);
+    border-radius: 100px;
+    text-align: center;
+    margin: auto;
+    border: 10px solid #fff;
+    margin-top: -65px;
+    position: relative; }
+  .react-addon-services.services-style5 .services-part .services-text {
+    padding: 20px 20px 0; }
+  .react-addon-services.services-style5 .services-part .services-btn-part {
+    margin-top: 30px; }
+    .react-addon-services.services-style5 .services-part .services-btn-part .services-btn {
+      display: inline-block;
+      cursor: pointer;
+      color: var(--titleColor) !important;
+      padding: 15px 33px;
+      font-size: 16px;
+      font-weight: 600;
+      font-family: var(--bodyFont) !important;
+      line-height: 19px;
+      text-align: center;
+      text-transform: capitalize;
+      background: transparent;
+      border-radius: 0px;
+      border: 1px solid var(--titleColor);
+      vertical-align: middle;
+      position: relative;
+      transform: perspective(1px) translateZ(0);
+      transition-property: color;
+      transition-duration: 0.3s;
+      transition: 0.3s;
+      z-index: 1;
+      overflow: hidden; }
+      .react-addon-services.services-style5 .services-part .services-btn-part .services-btn::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: var(--primaryColor);
+        border-radius: 0px;
+        transform-origin: 50%;
+        transition-property: transform;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-out;
+        transform: scaleX(0);
+        transition: .5s;
+        z-index: -1; }
+      .react-addon-services.services-style5 .services-part .services-btn-part .services-btn:hover::before {
+        transform: scaleX(1);
+        background: var(--primaryColor); }
+      .react-addon-services.services-style5 .services-part .services-btn-part .services-btn:hover {
+        color: var(--whiteColor) !important;
+        border: 1px solid var(--primaryColor); }
+  .react-addon-services.services-style5 .services-part:hover .service-thumb img {
+    transform: scale(1.2); }
+
+/*# sourceMappingURL=service-grid.css.map */

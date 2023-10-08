@@ -1,0 +1,141 @@
+@charset "UTF-8";
+/*var(--bodyFont): 'Space Grotesk', sans-serif;
+var(--titleFont): 'Space Grotesk', sans-serif;
+var(--transition): 1.3s;
+var(--primaryColor): #3f3eed;
+var(--secondaryColor): #083a5e;
+var(--whiteColor): #ffffff;
+var(--titleColor): #083a5e;
+$menuColor: #ffffff;
+var(--btnColor): #151f39;
+$linkColor: #6e777d;
+var(--hoverColor): #151f39;
+$globalColor: #6e777d;
+var(--bodyColor): #6e777d;
+$formBg: #ffffff;
+$gray77: #777777;
+$gray99: #999999;
+$shadow4: 0px 16px 32px 0px rgba(0, 0, 0, .04);
+$shadow6: 0px 16px 32px 0px rgba(0, 0, 0, .06);*/
+:root {
+  --bodyFont: 'Space Grotesk', sans-serif;
+  --titleFont: 'Space Grotesk', sans-serif;
+  --transition: 1.3s;
+  --primaryColor: #3f3eed;
+  --secondaryColor: #083a5e;
+  --whiteColor: #ffffff;
+  --titleColor: #083a5e;
+  --hoverColor: #3f3eed;
+  --bodyColor: #6e777d;
+  --btnColor: #151f39; }
+
+.single-testimonials-marquree .container .row {
+  flex-wrap: nowrap; }
+  .single-testimonials-marquree .container .row .marque-single-item {
+    background: #F7F7FF;
+    border: 1px solid #BCBCFF;
+    border-radius: 10px;
+    padding: 25px; }
+    .single-testimonials-marquree .container .row .marque-single-item .top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 20px; }
+      .single-testimonials-marquree .container .row .marque-single-item .top .author {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 13px; }
+        .single-testimonials-marquree .container .row .marque-single-item .top .author .info-content .title {
+          margin-bottom: -5px;
+          font-weight: 500;
+          font-size: 22px;
+          line-height: 32px; }
+        .single-testimonials-marquree .container .row .marque-single-item .top .author .info-content span.deg {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 24px;
+          color: var(--bodyColor); }
+      .single-testimonials-marquree .container .row .marque-single-item .top .stars-area {
+        display: flex;
+        align-items: center; }
+        .single-testimonials-marquree .container .row .marque-single-item .top .stars-area i {
+          margin: 0 2px;
+          color: var(--titleColor);
+          font-size: 14px; }
+      .single-testimonials-marquree .container .row .marque-single-item .top .review-rating {
+        padding-bottom: 35px;
+        margin-bottom: 25px;
+        display: flex;
+        align-items: center;
+        background: transparent;
+        border-radius: 3px;
+        padding: 3px 7px;
+        display: block;
+        max-width: max-content;
+        flex-basis: 55%; }
+        .single-testimonials-marquree .container .row .marque-single-item .top .review-rating .star-rating {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start; }
+          .single-testimonials-marquree .container .row .marque-single-item .top .review-rating .star-rating .star {
+            position: relative;
+            color: var(--titleColor);
+            display: inline-block;
+            font-family: rt-icons;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            height: 16px;
+            line-height: 27px;
+            text-align: center;
+            text-decoration: inherit;
+            vertical-align: top;
+            width: 26px; }
+          .single-testimonials-marquree .container .row .marque-single-item .top .review-rating .star-rating .star.star-full::before {
+            content: "";
+            font-family: 'rt-icons';
+            position: absolute;
+            left: 0;
+            top: 0; }
+          .single-testimonials-marquree .container .row .marque-single-item .top .review-rating .star-rating .star.star-half::before {
+            content: "";
+            position: absolute;
+            font-family: 'rt-icons';
+            left: 0;
+            top: 0; }
+          .single-testimonials-marquree .container .row .marque-single-item .top .review-rating .star-rating .star.star-empty::before {
+            content: "";
+            font-family: 'rt-icons';
+            position: absolute;
+            left: 0;
+            top: 0; }
+
+.marque-single-item.left {
+  display: inline-block;
+  will-change: transform;
+  animation: marquee_1 15s linear infinite; }
+
+@keyframes marquee_1 {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(-100%); } }
+.marque_animate:hover .marque-single-item.left {
+  animation-play-state: paused; }
+
+.marque-single-item.right {
+  display: inline-block;
+  will-change: transform;
+  animation: marquee_2 15s linear infinite; }
+
+@keyframes marquee_2 {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(100%); } }
+.marque_animate:hover .marque-single-item.right {
+  animation-play-state: paused; }
+
+/*# sourceMappingURL=slider.css.map */

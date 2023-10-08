@@ -1,0 +1,48 @@
+
+---Downloaded files---
+The import files for: Openup Dark Demo Import were successfully downloaded!
+Initial max execution time = 120
+Files info:
+Site URL = http://localhost/bdbxpinoy
+Data file = C:\xampp\htdocs\bdbxpinoy/wp-content/uploads/2023/10/demo-content-import-file_2023-10-08__17-52-02.xml
+Widget file = not defined!
+Customizer file = not defined!
+Redux files:
+openup_option -> C:\xampp\htdocs\bdbxpinoy/wp-content/uploads/2023/10/demo-redux-import-file_0-2023-10-08__17-52-02.json 
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+

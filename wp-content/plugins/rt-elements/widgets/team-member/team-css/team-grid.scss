@@ -1,0 +1,96 @@
+@import '../../../scss/base';
+
+.team-grid-style1{
+    .team-item {
+        overflow: visible;
+        text-align: center;
+        .team-inner-wrap{
+            border-radius: 8px;
+            overflow: hidden;      
+            position: relative; 
+            z-index: 1;
+            &::after {
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 0%;
+                bottom: 0;
+                left: 0;
+                background: #F6F6F6;
+                z-index: -1;
+                opacity: 0;
+                visibility: hidden;
+                transition: 0.3s;
+                border-radius: 10px;
+            } 
+            &:hover::after {
+                height: 60%;
+                opacity: 1;
+                visibility: visible;
+            }    
+        
+            .image-wrap {
+                position: relative;
+                overflow: hidden;            
+            }
+            .team-content {
+                margin: 0;
+                padding: 20px 10px 20px;
+                position: unset;
+                opacity: 1;            
+                h3.team-name {
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 30px;
+                    margin-bottom: 5px;
+                    text-transform: capitalize;
+                    a {
+                        text-decoration: none;
+                        color: #083a5e;
+                    }
+                }
+                span.team-title {
+                    font-family: var(--titleFont);
+                    font-size: 16px;
+                    color: #497696;
+                    margin-top: 5px;
+                }
+                .social-icons {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 10px;
+                    justify-content: center;
+                    opacity: 0;
+                    visibility: hidden;
+                    width: 0%;
+                    transition: 0.3s;
+                    margin-left: -10px;
+                    margin-top: 8px;
+                    a {
+                        margin: 0 10px;
+                        padding: 0;
+                        background: transparent;
+                        color: #000;
+
+                        i {
+                            color: #497696;;
+                            background: transparent;
+                        }
+
+                        &:hover {
+                            i {
+                                color: var(--primaryColor);
+                            }
+                        }
+                    }
+                }
+            }
+            &:hover .team-content .social-icons {
+                margin-left: 0;
+                width: 100%;
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}

@@ -1,0 +1,72 @@
+/*var(--bodyFont): 'Space Grotesk', sans-serif;
+var(--titleFont): 'Space Grotesk', sans-serif;
+var(--transition): 1.3s;
+var(--primaryColor): #3f3eed;
+var(--secondaryColor): #083a5e;
+var(--whiteColor): #ffffff;
+var(--titleColor): #083a5e;
+$menuColor: #ffffff;
+var(--btnColor): #151f39;
+$linkColor: #6e777d;
+var(--hoverColor): #151f39;
+$globalColor: #6e777d;
+var(--bodyColor): #6e777d;
+$formBg: #ffffff;
+$gray77: #777777;
+$gray99: #999999;
+$shadow4: 0px 16px 32px 0px rgba(0, 0, 0, .04);
+$shadow6: 0px 16px 32px 0px rgba(0, 0, 0, .06);*/
+:root {
+  --bodyFont: 'Space Grotesk', sans-serif;
+  --titleFont: 'Space Grotesk', sans-serif;
+  --transition: 1.3s;
+  --primaryColor: #3f3eed;
+  --secondaryColor: #083a5e;
+  --whiteColor: #ffffff;
+  --titleColor: #083a5e;
+  --hoverColor: #3f3eed;
+  --bodyColor: #6e777d;
+  --btnColor: #151f39; }
+
+.single-mp3-start {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  background: #fff;
+  min-width: max-content;
+  gap: 15px; }
+  .single-mp3-start .mid p {
+    margin-bottom: 3px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--titleColor); }
+  .single-mp3-start .icon-play {
+    width: 36px;
+    height: 36px;
+    background: var(--primaryColor);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; }
+
+.animate {
+  animation: jump-2 8s linear infinite; }
+
+/*jump animation */
+@keyframes jump-2 {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  50% {
+    -webkit-transform: translate3d(0, 30px, 0);
+    transform: translate3d(0, 30px, 0); }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+/*# sourceMappingURL=sound.css.map */

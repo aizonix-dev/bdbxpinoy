@@ -1,0 +1,34 @@
+@import '../../../scss/base';
+.react-button {
+    a {
+        display: inline-block;
+        color: #fff;
+        padding: 13px 25px;
+        font-size: 16px;
+        font-weight: 400;   
+        font-family: var(--bodyFont);
+        line-height: 25px;
+        text-align: center;
+        text-transform: capitalize;
+        background: var(--primaryColor);
+        border-radius: 30px;
+        transition: 0.3s;
+        overflow: hidden;        
+        &:hover {
+            background: var(--btnColor);
+        } 
+    }
+    &.secondary_btn {
+        a {
+            background: #d9d9d90f;
+            border: 1px solid #9796e91a !important;
+            box-sizing: border-box;
+            &:hover {
+                background: var(--primaryColor);
+                border: 1px solid transparent;
+            }
+        }
+       
+    }
+}
+

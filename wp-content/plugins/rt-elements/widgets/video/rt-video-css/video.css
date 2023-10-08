@@ -1,0 +1,153 @@
+/*var(--bodyFont): 'Space Grotesk', sans-serif;
+var(--titleFont): 'Space Grotesk', sans-serif;
+var(--transition): 1.3s;
+var(--primaryColor): #3f3eed;
+var(--secondaryColor): #083a5e;
+var(--whiteColor): #ffffff;
+var(--titleColor): #083a5e;
+$menuColor: #ffffff;
+var(--btnColor): #151f39;
+$linkColor: #6e777d;
+var(--hoverColor): #151f39;
+$globalColor: #6e777d;
+var(--bodyColor): #6e777d;
+$formBg: #ffffff;
+$gray77: #777777;
+$gray99: #999999;
+$shadow4: 0px 16px 32px 0px rgba(0, 0, 0, .04);
+$shadow6: 0px 16px 32px 0px rgba(0, 0, 0, .06);*/
+:root {
+  --bodyFont: 'Space Grotesk', sans-serif;
+  --titleFont: 'Space Grotesk', sans-serif;
+  --transition: 1.3s;
+  --primaryColor: #3f3eed;
+  --secondaryColor: #083a5e;
+  --whiteColor: #ffffff;
+  --titleColor: #083a5e;
+  --hoverColor: #3f3eed;
+  --bodyColor: #6e777d;
+  --btnColor: #151f39; }
+
+/** video css --------------------------
+--------------------------------------*/
+@keyframes pulse-border {
+  0% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(0.5);
+    opacity: 1; }
+  100% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    opacity: 0; } }
+.react-video {
+  position: relative;
+  background-repeat: no-repeat !important;
+  background-size: content !important;
+  padding: 100px 20px; }
+  .react-video.center .overly-border {
+    margin: 0 auto; }
+  .react-video.left .overly-border {
+    margin-left: 0;
+    margin-right: auto; }
+  .react-video.right .overly-border {
+    margin-left: auto;
+    margin-right: 0; }
+  .react-video.style1 .video-desc {
+    top: 60px; }
+  .react-video .video-desc {
+    z-index: 1;
+    font-size: 20px;
+    position: relative; }
+    .react-video .video-desc span {
+      display: block;
+      font-size: 22px;
+      font-weight: 400; }
+  .react-video .overly-border {
+    border-radius: 50%;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; }
+  .react-video .video-content {
+    z-index: 10; }
+    .react-video .video-content h4 {
+      margin-top: 40px;
+      margin-bottom: 0;
+      font-size: 30px;
+      color: #fff;
+      text-transform: uppercase; }
+  .react-video:hover .popup-videos {
+    animation-duration: 0.8s; }
+  .react-video .popup-videos {
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    box-sizing: content-box;
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    line-height: 90px;
+    padding: 0;
+    margin: 0 auto;
+    left: 50%;
+    top: 50%;
+    z-index: 9;
+    text-align: center;
+    background: var(--primaryColor); }
+    .react-video .popup-videos:after {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      display: block;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      transition: all 200ms; }
+    .react-video .popup-videos:before {
+      border: 1px solid #fff;
+      content: "";
+      position: absolute;
+      z-index: 0;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      display: block;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      animation: pulse-border 1500ms ease-out infinite; }
+    .react-video .popup-videos i {
+      text-indent: 5px;
+      -webkit-transition: 0.3s ease all;
+      transition: 0.3s ease all;
+      font-size: 28px;
+      color: var(--primaryColor);
+      position: relative;
+      top: -4px; }
+      .react-video .popup-videos i:before {
+        color: #fff;
+        top: -1px; }
+    .react-video .popup-videos:hover {
+      border-color: rgba(255, 255, 255, 0.7); }
+    .react-video .popup-videos span {
+      display: block;
+      position: relative;
+      z-index: 3;
+      width: 0;
+      height: 0;
+      border-left: 27px solid #fff;
+      border-top: 17px solid transparent;
+      border-bottom: 17px solid transparent; }
+  .react-video:hover .overly-border:before, .react-video:hover .overly-border:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  .react-video.style2 .overly-border {
+    width: 60px;
+    height: 60px; }
+
+/*# sourceMappingURL=video.css.map */
